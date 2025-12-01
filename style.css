@@ -93,15 +93,16 @@ html{
 .HeaderBlanco{
     background-color: white;
 }
-.HeaderBlanco a{
+
+.HeaderBlanco a, .HeaderRojo a{
     color: black;
 }
 
 
 .HeaderRojo{
-    color: black;
     background-color:rgb(255, 71, 59);
 }
+
 
 
 .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
@@ -209,6 +210,7 @@ html{
 
 .ContenedorSectDosTres__SectionTres{
     width: 50%;
+    border: 0.2rem;
     border-left: solid;
     border-color: rgb(255, 255, 255);
     border-width: 0.2rem;  /* ancho de borde */ 
@@ -229,8 +231,8 @@ html{
     height: 10vh;
     background-color: rgb(255, 71, 59); 
     display: flex;
-    align-items: center; /* alinea horizontal */
-    justify-content: center; /* alinea vertical */
+    align-items: center; /* alinea veticall */
+    justify-content: center; /* alinea horizontal */
 }
 .SectionCuatro a{
     font-weight: bold;
@@ -334,7 +336,7 @@ html{
     height: 60vh;
     background-color: rgb(18, 18, 18);
     display: flex;
-    align-items: center;
+    align-items: center; /* alinea en horizontal por column, flex direction */
     justify-content: center;
     flex-direction: column; /* para que los contenedores no esten lado a lado */
     padding-bottom: 5rem;
@@ -344,8 +346,8 @@ html{
     height: 5vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
     gap: 5rem;
 }
 
@@ -384,7 +386,7 @@ html{
 .Actividad__Videos {
     display: flex;
     flex-direction: column; /* videos uno debajo del otro */
-    align-items: center; /* centrados */
+    align-items: center; /* centrados horizontal por column */
     gap: 40px; /* espacio entre video*/
     padding: 40px; /* espacio arriba/abajo */
 }
@@ -410,7 +412,7 @@ html{
     font-family: 'Poppins', sans-serif;
     font-size: 10rem;
     font-weight: 900;
-    line-height: 5rem;
+    line-height: 5rem; /* dar espacio entre texto, separcion de abajo */
 }
 .ContenidoTexto span{
     font-family: 'Poppins', sans-serif;
@@ -422,7 +424,7 @@ html{
     width: 100%;
     height: 15vh;
     display: flex;
-    align-items: center;
+    align-items: center; /* alinea vertical */
     justify-content: space-between;
     font-size: 2rem;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
@@ -434,4 +436,75 @@ html{
 .SectDos span, .SectUno span{
     font-size: 2.5rem;
     font-weight: 600;
+}
+
+/* SOBRE YS */
+.SectInicial {
+    padding-top: 5rem;
+    background-color: rgb(255, 71, 59); 
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    width: 100%;
+    height: 50vh;               /* ocupa toda la pantalla */
+}
+
+.SectInicial__YS {
+    font-size: 12rem;
+    font-weight: 900;
+    line-height: 15rem;
+    color: black;
+}
+
+
+.TextoUno {
+    padding-left: 20rem;
+}
+
+.TextoDos {
+    display: flex;
+    align-items: center; /* alinea vertical */
+    padding-left: 11rem;
+    gap: 20px;             /* separa AL - SIGUIENTE */
+}
+
+.linea {
+    display: inline-block;
+    width: 35rem;         /* tamaño de la línea */
+    height: 0.2rem;
+    background-color: black;
+}
+
+.TextoTres {
+    padding-left: 43rem;
+}
+
+.SobreYS p{
+    padding: 0 8rem;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.SobreYS{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 71, 59);
+    padding-bottom: 5rem;
+    border-bottom: 0.2rem solid black;
+}
+.SobreYS img{
+    padding: 0 20rem;
+    width: 115rem;
+    height: 60rem;
+
+}
+.SobreYSBorde{
+    border-color: black;
+}
+
+.Tamaño{
+    margin-top: -1.5rem;
+}
+.Contacto a{
+    font-size: 3.5rem;
 }
