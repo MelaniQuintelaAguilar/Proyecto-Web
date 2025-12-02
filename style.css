@@ -83,18 +83,22 @@ html{
         color 0.3s,
         font-size 0.3s;
 }
-.Header__nav__menu__negro:hover{
-    font-size: 3.2rem;
-    color: black;
 
-}
-.Header__nav__menu__grande:hover{
+.Header__nav__menu__boton:hover{
+    border-radius: 5rem;
+    padding: 0.7rem 1.5rem;
+    color: black;
     font-size: 3.2rem;
+    background-color:rgb(255, 71, 59);
 }
-.Header__nav__menu__blanco:hover{
+.Header__nav__menu__rojo:hover{
+    border-radius: 5rem;
+    padding: 0.7rem 1.5rem;
     color: white;
     font-size: 3.2rem;
+    background-color:black;
 }
+
 .Header__nav__menu li {
     padding-left: 6rem; /* para separar las los links*/
 }
@@ -192,6 +196,8 @@ html{
 }
 .ContenedorSectDosTres__SectionDos{
     width: 50%;
+}
+.SectionDos__img{
     background-image:  linear-gradient(
         rgba(0, 0, 0, 0.5),   /* capa negra transparente */
         rgba(0, 0, 0, 0.5)    /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
@@ -242,6 +248,8 @@ html{
     border-left: solid;
     border-color: rgb(255, 255, 255);
     border-width: 0.2rem;  /* ancho de borde */ 
+}
+.SectionTres__img{
     background-image: linear-gradient(     /* se usa para degradado */
         rgba(0, 0, 0, 0.5),   /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
         rgba(0, 0, 0, 0.5)    
@@ -474,6 +482,7 @@ html{
     font-weight: 600;
 }
 
+
 /* SOBRE YS */
 .SectInicial {
     padding-top: 5rem;
@@ -516,7 +525,7 @@ html{
 .SobreYS p{
     padding: 0 8rem;
     color: black;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -534,13 +543,24 @@ html{
     height: 60rem;
 
 }
-.SobreYSBorde{
-    border-color: black;
-}
-
-.Tamaño{
-    margin-top: -1.5rem;
-}
 .Contacto a{
     font-size: 3.5rem;
+}
+.SobreYS__imagenYT{
+    background-image: linear-gradient(     /* se usa para degradado */
+        rgba(0, 0, 0, 0.5),   /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
+        rgba(0, 0, 0, 0.5)    
+        /* se repite para crear capa uniforme en vez de degradado */
+    ), url(img/SobreYSYT.jpg);
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center; /* Mantén el punto central de la imagen siempre visible */
+}
+.SobreYS__imagenTT{
+    background-image: linear-gradient(     /* se usa para degradado */
+        rgba(0, 0, 0, 0.5),   /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
+        rgba(0, 0, 0, 0.5)    
+        /* se repite para crear capa uniforme en vez de degradado */
+    ), url(img/SobreYSTT.jpg);
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
