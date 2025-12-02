@@ -79,6 +79,21 @@ html{
     color: white;
     text-decoration: none;
     font-size: 2.6rem;
+    transition: 
+        color 0.3s,
+        font-size 0.3s;
+}
+.Header__nav__menu__negro:hover{
+    font-size: 3.2rem;
+    color: black;
+
+}
+.Header__nav__menu__grande:hover{
+    font-size: 3.2rem;
+}
+.Header__nav__menu__blanco:hover{
+    color: white;
+    font-size: 3.2rem;
 }
 .Header__nav__menu li {
     padding-left: 6rem; /* para separar las los links*/
@@ -140,7 +155,7 @@ html{
     display: inline-flex; /* para que el texto y la flecha estén alineados, hace que el enlace sea un contenedor flexible en línea */
     margin-top: 5rem; /* espacio arriba del elace */
     align-items: center; /* alinea horizontal */
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     text-decoration: none; /* quitar la linea predeterminada del link */
     font-family: 'Encode Sans Semi Condensed', sans-serif;
@@ -162,7 +177,11 @@ html{
     X porque el movimiento es horizontal */
 }
 
+/* 
 
+
+
+*/
 .ContenedorSectDosTres{
     display: flex; /* elemntos flexibles */
     justify-content: space-between; /* hace que las dos secciones esten lado a lado */
@@ -173,7 +192,15 @@ html{
 }
 .ContenedorSectDosTres__SectionDos{
     width: 50%;
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.5),   /* capa negra transparente */
+        rgba(0, 0, 0, 0.5)    /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
+        /* se repite para crear capa uniforme en vez de degradado */
+    ),  url(img/imgDancer.jpg);
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center 10%; /* Mantén el punto central de la imagen siempre visible */
 }
+
 .ContenedorSectDosTres__Boton{
     margin-top: 30rem; /* para que el boton se acomode abajo */
     display: inline-flex; /* para que el texto y la flecha estén alineados, hace que el enlace sea un contenedor flexible en línea */
@@ -215,7 +242,15 @@ html{
     border-left: solid;
     border-color: rgb(255, 255, 255);
     border-width: 0.2rem;  /* ancho de borde */ 
+    background-image: linear-gradient(     /* se usa para degradado */
+        rgba(0, 0, 0, 0.5),   /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
+        rgba(0, 0, 0, 0.5)    
+        /* se repite para crear capa uniforme en vez de degradado */
+    ), url(img/ElencoIndex.jpg);
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
+
 .ContenedorSectDosTres__Text{
     margin-top: 40rem; /* para bajar el texto al centro */
     color: white;
@@ -237,7 +272,7 @@ html{
 }
 .SectionCuatro a{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Oswald', sans-serif;
     color: black;
     text-decoration: none;
