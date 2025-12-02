@@ -118,6 +118,7 @@ html{
 .SectionUno__YS{ /* PARA YOUNG SOUL DANCE STUDIO */
     font-size: 2.7rem;
     font-family: Arial, sans-serif;
+    font-weight: 300;
      /* para dar espacio entre las letras */
 }
 .SectionUno__lema{ /* SER MEJOR PERSONA */
@@ -410,7 +411,7 @@ html{
     margin: 9rem 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 900;
     line-height: 5rem; /* dar espacio entre texto, separcion de abajo */
 }
