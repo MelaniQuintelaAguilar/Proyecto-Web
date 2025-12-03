@@ -41,18 +41,6 @@ html{
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     z-index: 2;           /* Asegura que está sobre el video, es nivel de apilamiento */
 }
-@media (min-width:768px ){
-    .nav{
-        position: absolute;
-
-    }
-}
-
-
-
-
-
-
 
 .Header__nav__logoText { /* PARA EL YOUNG SOUL */
     position: fixed; /* para que young soul se fije al hacer scroll */
@@ -63,8 +51,8 @@ html{
 }
 .Header__nav__logoText__logoimg{
     font-weight: bold;
-    width: 3%;  /* sin eso la imagen se sale de donde deberia */
-    height: 5%;
+    width: 5rem;  /* sin eso la imagen se sale de donde deberia */
+    height: 5rem;
     vertical-align: middle; /* para que el medio de la imagen se alinie con el medio dlel texto */
 }
 
@@ -72,7 +60,7 @@ html{
     display: flex; /* poner elementos en fila */
     list-style: none; /* quitar puntos de la lista */
     gap: 4rem; /* espacio entre las opciones */
-    margin-left: 125em; /* del margen para afuera, Para dar margen a la izquierda y separar los links de young soul */
+    margin-left: 125rem; /* del margen para afuera, Para dar margen a la izquierda y separar los links de young soul */
 }
 .Header__nav__menu a { /* links  */
     font-weight: 900;
@@ -128,12 +116,14 @@ html{
     border-bottom: solid; /* linea para la parte de abajo */
     border-color: rgb(255, 255, 255);
     border-width: 0.2rem; /* grosor de borde */
-    height: 65vh; /* el 55 de la altura de pantalla */
+    height: 95rem; 
     background-color: rgb(18, 18, 18);
     padding: 5rem; /* Separar el texto del borde, el texto no se pega al borde */
     text-align: center;
     color: white;
 }
+
+
 .SectionUno__YS{ /* PARA YOUNG SOUL DANCE STUDIO */
     font-size: 2.7rem;
     font-family: Arial, sans-serif;
@@ -144,7 +134,7 @@ html{
     padding-top: 10rem; /* separar young soul del lema */
     font-size: 4.5rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: bold;;
     
 }
 .SectionUno__lema span{ /* ANTES Q BUEN BAILARIN */
@@ -188,10 +178,8 @@ html{
 */
 .ContenedorSectDosTres{
     display: flex; /* elemntos flexibles */
-    justify-content: space-between; /* hace que las dos secciones esten lado a lado */
-    height: 90vh;
-    background-color: rgb(18, 18, 18); 
-    font-size: 2rem;
+    justify-content: center; /* hace que las dos secciones esten lado a lado */
+    height: 120rem; 
     text-align: center;/* alinea los elementos al centro */
 }
 .ContenedorSectDosTres__SectionDos{
@@ -272,7 +260,7 @@ html{
 
 .SectionCuatro{
     width: 100%;
-    height: 10vh;
+    height: 10rem;
     background-color: rgb(255, 71, 59); 
     display: flex;
     align-items: center; /* alinea veticall */
@@ -288,27 +276,16 @@ html{
 
 .PiePag{
     width: 100%;
-    height: 40vh; /* tamaño de la pantalla q opucara viewport heigth */
+    height: 60rem; 
     background: white; 
     display: flex;
     flex-direction: column;
     align-items: center; /* alinea horizontal */
     justify-content: center; /* alinea vertical */
-   
-  
-}
-.PiePag p{
-    font-size: 5rem;
-    color: black;
-    text-decoration: none;
-    
-}
-.PiePag span{
-    font-size: 5rem;
-    color: black;
-    text-decoration: none;
 
 }
+
+
 .PiePag__Titulo{
     font-family: 'Poppins', sans-serif;
     font-size: 10rem;
@@ -350,12 +327,87 @@ html{
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
+@media (max-width:768px ){
+    .Header__nav__logoText__logoimg{
+         width: 3rem;  /* sin eso la imagen se sale de donde deberia */
+         height: 3rem;
+    }
+    .Header__nav__logoText { /* PARA EL YOUNG SOUL */
+        font-size: 1.5rem;
+     }
+    .SectionUno__lema{ /* SER MEJOR PERSONA */
+         font-size: 3rem;
+    
+    }
+    .SectionUno__lema span{ /* ANTES Q BUEN BAILARIN */
+         font-size: 5rem;
+    }
+    .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
+         height: 70rem;
+    }
+    .ContenedorSectDosTres{
+         flex-direction: column;
+         height: auto;                                                           ;
+    }
+    .ContenedorSectDosTres__SectionTres{
+         border-top: solid;
+         border-color: white;
+         border-left: 0;
+    }
+    .ContenedorSectDosTres__SectionDos,.ContenedorSectDosTres__SectionTres {
+        width: 100%;
+    }
+
+    .ContenedorSectDosTres__Text {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
+
+    .ContenedorSectDosTres__Boton {
+        margin-top: 7rem;
+        font-size: 2rem;
+    }
+    .SectionCuatro a{
+         font-size: 2rem;
+    }
+
+    .ContenedorSectDosTres__Boton{
+         font-size: 1.5rem;
+         margin-bottom: 10rem;
+         padding: 0rem 2rem;     /* espacio interno, 0 abajo arriba, 4 izq derec, necesario para que el hover se transforme bien */
+    }
+    .ContenedorSectDosTres__FlechaDos{
+         font-size: 3rem; /* agrandar flecha */
+    }
+    .PiePag{
+         height: 35rem; 
+    }
+    .PiePag__RedesSociales__Link{
+         width: 4rem;
+         height: 4rem;
+    }
+    /* FOOTER */
+    .PiePag__Titulo { 
+         font-size: 5rem; 
+    }
+    .PiePag__Nombre {
+         font-size: 3rem; 
+    }
+    .PiePag__Direccion { 
+        font-size: 2.4rem; 
+    }
+
+    .SectionUno__YS { /* PARA EL YOUNG SOUL */
+    font-size: 2rem;
+}
+
+}
 
 
 /* INSTRUCTOR */
 .Dancer{
     width: 100%;
-    height: 40vh;
+    height: 50rem;
     padding-top: 15rem; /* para dar espacio entre el borde y el contenido */
     color: white;
     text-align: center; /* texto ne el centro */
@@ -377,7 +429,7 @@ html{
 
 .DancerDos{
     width: 100%;
-    height: 60vh;
+    height: 90rem;
     background-color: rgb(18, 18, 18);
     display: flex;
     align-items: center; /* alinea en horizontal por column, flex direction */
@@ -387,7 +439,7 @@ html{
 }
 .DancerDos__RedesS{
     margin-top: 5rem;
-    height: 5vh;
+    height: 5rem;
     width: 100%;
     display: flex;
     align-items: center; /* vertical */
@@ -446,7 +498,7 @@ html{
 /* CONTACTANOS */
 #map{
     width: 100%;
-    height: 75vh;
+    height: 105rem;
     border-top: 0.3rem solid black;
     border-bottom: 0.3rem solid black;
 }
@@ -466,7 +518,7 @@ html{
 .SectDos, .SectUno{
     padding: 0 5rem;
     width: 100%;
-    height: 15vh;
+    height: 15rem;
     display: flex;
     align-items: center; /* alinea vertical */
     justify-content: space-between;
@@ -489,7 +541,7 @@ html{
     background-color: rgb(255, 71, 59); 
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     width: 100%;
-    height: 50vh;               /* ocupa toda la pantalla */
+    height: 70rem;               /* ocupa toda la pantalla */
 }
 
 .SectInicial__YS {
