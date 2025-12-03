@@ -667,54 +667,6 @@ html{
     font-weight: 600;
 }
 
-@media (max-width: 768px){
-    #map{
-    border-top: 0.1rem;
-    border-bottom: 0.1rem;
-}
-    .ContenidoTexto{
-    margin: 2rem 0;
-    font-size: 3rem;
-}
-.ContenidoTexto span{
-    font-size: 1.5rem;
-}
-.SectDos, .SectUno{
-    font-size: 1rem;
-}
-.SectUno{
-    border-bottom: 0.1rem solid black;
-}
-
-.SectDos span, .SectUno span{
-    font-size: 1rem;
-}
-}
-
-@media (max-width: 1200px){
-    #map{
-    border-top: 0.1rem;
-    border-bottom: 0.1rem;
-}
-    .ContenidoTexto{
-    margin: 2rem 0;
-    font-size: 3rem;
-}
-.ContenidoTexto span{
-    font-size: 1.5rem;
-}
-.SectDos, .SectUno{
-    font-size: 1rem;
-}
-.SectUno{
-    border-bottom: 0.1rem solid black;
-}
-
-.SectDos span, .SectUno span{
-    font-size: 1rem;
-}
-}
-
 
 /* SOBRE YS */
 .SectInicial {
@@ -797,6 +749,145 @@ html{
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
-@media (max-width: 768){
+
+
+
+@media (max-width: 1200px){
+
+    /* CONTACTANOS */
+    #map{
+    border-top: 0.1rem;
+    border-bottom: 0.1rem;
+}
+    .ContenidoTexto{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.ContenidoTexto span{
+    font-size: 1.5rem;
+}
+.SectDos, .SectUno{
+    font-size: 1rem;
+}
+.SectUno{
+    border-bottom: 0.1rem solid black;
+}
+
+.SectDos span, .SectUno span{
+    font-size: 1rem;
+}
+
+/* SOBRE YS */
+.SectInicial {
+    padding-top: 0;
+    height: 20rem;               /* ocupa toda la pantalla */
+
+}
+
+    .SectInicial__YS {
+    line-height: 7rem;
+    font-size: 4.5rem;
     
+}
+.SobreYS img{
+    padding: 0 20rem;
+    width: 70rem;
+    height: 25rem;
+}
+
+.TextoUno {
+    padding-left: 22rem;
+}
+
+.TextoDos {
+    padding-left: 15rem;
+}
+
+.linea {
+    width: 15rem;         /* tamaño de la línea */
+    height: 0.1rem;
+    background-color: black;
+}
+
+.TextoTres {
+    padding-left: 30rem;
+}
+
+.SobreYS p{
+    padding: 3rem 3rem;
+    font-size: 1.3rem;
+
+}
+
+}
+
+
+@media (max-width: 768px){
+    #map{
+    border-top: 0.1rem;
+    border-bottom: 0.1rem;
+}
+    .ContenidoTexto{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.ContenidoTexto span{
+    font-size: 1.5rem;
+}
+.SectDos, .SectUno{
+    font-size: 1rem;
+}
+.SectUno{
+    border-bottom: 0.1rem solid black;
+}
+
+.SectDos span, .SectUno span{
+    font-size: 1rem;
+}
+
+/* SOBRE YS */
+
+.SectInicial {
+    padding-top: 0rem;
+    height: 20rem;               /* ocupa toda la pantalla */
+}
+
+    .SectInicial__YS {
+    line-height: 5rem;
+    font-size: 2.5rem;
+    
+}
+.SobreYS img{
+    width: 65rem;
+    height: 20rem;
+}
+
+.TextoUno {
+    padding-left: 8rem;
+}
+
+.TextoDos {
+    padding-left: 5rem;
+}
+
+.linea {
+    width: 10rem;         /* tamaño de la línea */
+    height: 0.1rem;
+    background-color: black;
+}
+
+.TextoTres {
+    padding-left: 17rem;
+}
+
+.SobreYS p{
+    padding: 3rem 5rem;
+    font-size: 1.3rem;
+
+}
+.SobreYS{
+    flex-direction: column;
+    padding-bottom: 5rem;
+    border-bottom: 0.1rem;
+}
 }
