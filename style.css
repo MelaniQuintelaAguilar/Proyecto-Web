@@ -327,6 +327,8 @@ html{
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
+
+
 @media (max-width:768px ){
     .Header__nav__logoText__logoimg{
          width: 3rem;  /* sin eso la imagen se sale de donde deberia */
@@ -347,7 +349,7 @@ html{
     }
     .ContenedorSectDosTres{
          flex-direction: column;
-         height: auto;                                                           ;
+         height: auto;                                                           
     }
     .ContenedorSectDosTres__SectionTres{
          border-top: solid;
@@ -495,6 +497,36 @@ html{
 }
 
 
+@media (max-width: 768px ){
+    .Dancer{
+         height: 15rem;
+         padding-top: 0rem; /* para dar espacio entre el borde y el contenido */
+         font-size: 5rem;
+         line-height: 4rem;
+    }
+    .Dancer span{
+         font-size: 1.5rem;
+    }
+    .DancerDos__RedesS__Link{
+         margin-top: 0;
+         width: 3rem;
+         height: 3rem;
+     }
+      .DancerDos__img{
+    width: 25rem;
+    height: 25rem;
+    }
+     .DancerDos{
+          height: 45rem;
+    }
+    .Actividad{
+         padding-top: 3rem;
+         font-size: 1.5rem;
+    }
+}
+
+
+
 /* CONTACTANOS */
 #map{
     width: 100%;
@@ -534,7 +566,10 @@ html{
     font-weight: 600;
 }
 
-
+@media (max-width: 768px){
+    
+    
+}
 /* SOBRE YS */
 .SectInicial {
     padding-top: 5rem;
