@@ -40,6 +40,7 @@ html{
     color: white;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     z-index: 2;           /* Asegura que está sobre el video, es nivel de apilamiento */
+    background-color: none;
 }
 
 .Header__nav__logoText { /* PARA EL YOUNG SOUL */
@@ -567,9 +568,30 @@ html{
 }
 
 @media (max-width: 768px){
-    
-    
+    #map{
+    border-top: 0.1rem;
+    border-bottom: 0.1rem;
 }
+    .ContenidoTexto{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.ContenidoTexto span{
+    font-size: 1.5rem;
+}
+.SectDos, .SectUno{
+    font-size: 1rem;
+}
+.SectUno{
+    border-bottom: 0.1rem solid black;
+}
+
+.SectDos span, .SectUno span{
+    font-size: 1rem;
+}
+}
+
+
 /* SOBRE YS */
 .SectInicial {
     padding-top: 5rem;
