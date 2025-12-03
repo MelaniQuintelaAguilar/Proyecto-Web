@@ -329,157 +329,7 @@ html{
 }
 
 
-@media (max-width:768px ){
-    .Header__nav__logoText__logoimg{
-         width: 3rem;  /* sin eso la imagen se sale de donde deberia */
-         height: 3rem;
-    }
-    .Header__nav__logoText { /* PARA EL YOUNG SOUL */
-        font-size: 1.5rem;
-     }
-    .SectionUno__lema{ /* SER MEJOR PERSONA */
-         font-size: 3rem;
-    
-    }
-    .SectionUno__lema span{ /* ANTES Q BUEN BAILARIN */
-         font-size: 5rem;
-    }
-    .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
-         height: 70rem;
-    }
-    .ContenedorSectDosTres{
-         flex-direction: column;
-         height: auto;                                                           
-    }
-    .ContenedorSectDosTres__SectionTres{
-         border-top: solid;
-         border-color: white;
-         border-left: 0;
-    }
-    .ContenedorSectDosTres__SectionDos,.ContenedorSectDosTres__SectionTres {
-        width: 100%;
-    }
 
-    .ContenedorSectDosTres__Text {
-        font-size: 3rem;
-        margin-top: 15rem;
-    }
-
-    .ContenedorSectDosTres__Boton {
-        margin-top: 7rem;
-        font-size: 2rem;
-    }
-    .SectionCuatro a{
-         font-size: 2rem;
-    }
-
-    .ContenedorSectDosTres__Boton{
-         font-size: 1.5rem;
-         margin-bottom: 10rem;
-         padding: 0rem 2rem;     /* espacio interno, 0 abajo arriba, 4 izq derec, necesario para que el hover se transforme bien */
-    }
-    .ContenedorSectDosTres__FlechaDos{
-         font-size: 3rem; /* agrandar flecha */
-    }
-    .PiePag{
-         height: 35rem; 
-    }
-    .PiePag__RedesSociales__Link{
-         width: 4rem;
-         height: 4rem;
-    }
-    /* FOOTER */
-    .PiePag__Titulo { 
-         font-size: 5rem; 
-    }
-    .PiePag__Nombre {
-         font-size: 3rem; 
-    }
-    .PiePag__Direccion { 
-        font-size: 2.4rem; 
-    }
-
-    .SectionUno__YS { /* PARA EL YOUNG SOUL */
-    font-size: 2rem;
-}
-
-}
-
-@media (max-width:1200px ){
-    .Header__nav__logoText__logoimg{
-         width: 3rem;  /* sin eso la imagen se sale de donde deberia */
-         height: 3rem;
-    }
-    .Header__nav__logoText { /* PARA EL YOUNG SOUL */
-        font-size: 1.5rem;
-     }
-    .SectionUno__lema{ /* SER MEJOR PERSONA */
-         font-size: 3rem;
-    
-    }
-    .SectionUno__lema span{ /* ANTES Q BUEN BAILARIN */
-         font-size: 5rem;
-    }
-    .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
-         height: 70rem;
-    }
-    .ContenedorSectDosTres{
-         flex-direction: column;
-         height: auto;                                                           
-    }
-    .ContenedorSectDosTres__SectionTres{
-         border-top: solid;
-         border-color: white;
-         border-left: 0;
-    }
-    .ContenedorSectDosTres__SectionDos,.ContenedorSectDosTres__SectionTres {
-        width: 100%;
-    }
-
-    .ContenedorSectDosTres__Text {
-        font-size: 3rem;
-        margin-top: 15rem;
-    }
-
-    .ContenedorSectDosTres__Boton {
-        margin-top: 7rem;
-        font-size: 2rem;
-    }
-    .SectionCuatro a{
-         font-size: 2rem;
-    }
-
-    .ContenedorSectDosTres__Boton{
-         font-size: 1.5rem;
-         margin-bottom: 10rem;
-         padding: 0rem 2rem;     /* espacio interno, 0 abajo arriba, 4 izq derec, necesario para que el hover se transforme bien */
-    }
-    .ContenedorSectDosTres__FlechaDos{
-         font-size: 3rem; /* agrandar flecha */
-    }
-    .PiePag{
-         height: 35rem; 
-    }
-    .PiePag__RedesSociales__Link{
-         width: 4rem;
-         height: 4rem;
-    }
-    /* FOOTER */
-    .PiePag__Titulo { 
-         font-size: 5rem; 
-    }
-    .PiePag__Nombre {
-         font-size: 3rem; 
-    }
-    .PiePag__Direccion { 
-        font-size: 2.4rem; 
-    }
-
-    .SectionUno__YS { /* PARA EL YOUNG SOUL */
-    font-size: 2rem;
-}
-
-}
 
 /* INSTRUCTOR */
 .Dancer{
@@ -572,61 +422,9 @@ html{
 }
 
 
-@media (max-width: 768px ){
-    .Dancer{
-         height: 15rem;
-         padding-top: 0rem; /* para dar espacio entre el borde y el contenido */
-         font-size: 5rem;
-         line-height: 4rem;
-    }
-    .Dancer span{
-         font-size: 1.5rem;
-    }
-    .DancerDos__RedesS__Link{
-         margin-top: 0;
-         width: 3rem;
-         height: 3rem;
-     }
-      .DancerDos__img{
-    width: 25rem;
-    height: 25rem;
-    }
-     .DancerDos{
-          height: 45rem;
-    }
-    .Actividad{
-         padding-top: 3rem;
-         font-size: 1.5rem;
-    }
-}
 
-@media (max-width: 1200px ){
-    .Dancer{
-         height: 15rem;
-         padding-top: 0rem; /* para dar espacio entre el borde y el contenido */
-         font-size: 5rem;
-         line-height: 4rem;
-    }
-    .Dancer span{
-         font-size: 1.5rem;
-    }
-    .DancerDos__RedesS__Link{
-         margin-top: 0;
-         width: 3rem;
-         height: 3rem;
-     }
-      .DancerDos__img{
-    width: 25rem;
-    height: 25rem;
-    }
-     .DancerDos{
-          height: 45rem;
-    }
-    .Actividad{
-         padding-top: 3rem;
-         font-size: 1.5rem;
-    }
-}
+
+
 
 /* CONTACTANOS */
 #map{
@@ -751,10 +549,105 @@ html{
 }
 
 
-
-@media (max-width: 1200px){
-
-    /* CONTACTANOS */
+@media (max-width:1024px ){
+    /* INDEX */
+    .Header__nav__logoText__logoimg{
+         width: 2.5rem;  /* sin eso la imagen se sale de donde deberia */
+         height: 2.5rem;
+    }
+    .Header__nav__logoText { /* PARA EL YOUNG SOUL */
+        font-size: 1.5rem;
+     }
+    .SectionUno__lema{ /* SER MEJOR PERSONA */
+         font-size: 3rem;
+   
+    }
+    .SectionUno__lema span{ /* ANTES Q BUEN BAILARIN */
+         font-size: 5rem;
+    }
+    .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
+         height: 70rem;
+    }
+    .ContenedorSectDosTres{
+         flex-direction: column;
+         height: auto;                                                          
+    }
+    .ContenedorSectDosTres__SectionTres{
+         border-top: solid;
+         border-color: white;
+         border-left: 0;
+    }
+    .ContenedorSectDosTres__SectionDos,.ContenedorSectDosTres__SectionTres {
+        width: 100%;
+    }
+    .ContenedorSectDosTres__Text {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
+    .ContenedorSectDosTres__Boton {
+        margin-top: 7rem;
+        font-size: 2rem;
+    }
+    .SectionCuatro a{
+         font-size: 2rem;
+    }
+    .ContenedorSectDosTres__Boton{
+         font-size: 1.5rem;
+         margin-bottom: 10rem;
+         padding: 0rem 2rem;     /* espacio interno, 0 abajo arriba, 4 izq derec, necesario para que el hover se transforme bien */
+    }
+    .ContenedorSectDosTres__FlechaDos{
+         font-size: 3rem; /* agrandar flecha */
+    }
+    .PiePag{
+         height: 35rem;
+    }
+    .PiePag__RedesSociales__Link{
+         width: 4rem;
+         height: 4rem;
+    }
+    /* FOOTER */
+    .PiePag__Titulo {
+         font-size: 5rem;
+    }
+    .PiePag__Nombre {
+         font-size: 3rem;
+    }
+    .PiePag__Direccion {
+        font-size: 2.4rem;
+    }
+    .SectionUno__YS { /* PARA EL YOUNG SOUL */
+    font-size: 2rem;
+}
+ 
+/* INSTRUCTOR */
+    .Dancer{
+         height: 15rem;
+         padding-top: 0rem; /* para dar espacio entre el borde y el contenido */
+         font-size: 5rem;
+         line-height: 4rem;
+    }
+    .Dancer span{
+         font-size: 1.5rem;
+    }
+    .DancerDos__RedesS__Link{
+         margin-top: 0;
+         width: 3rem;
+         height: 3rem;
+     }
+      .DancerDos__img{
+    width: 25rem;
+    height: 25rem;
+    }
+     .DancerDos{
+          height: 45rem;
+    }
+    .Actividad{
+         padding-top: 3rem;
+         font-size: 1.5rem;
+    }
+ 
+     /* CONTACTANOS */
     #map{
     border-top: 0.1rem;
     border-bottom: 0.1rem;
@@ -772,118 +665,39 @@ html{
 .SectUno{
     border-bottom: 0.1rem solid black;
 }
-
+ 
 .SectDos span, .SectUno span{
     font-size: 1rem;
 }
-
+ 
 /* SOBRE YS */
-.SectInicial {
-    padding-top: 0;
-    height: 20rem;               /* ocupa toda la pantalla */
-
-}
-
     .SectInicial__YS {
     line-height: 7rem;
     font-size: 4.5rem;
-    
+   
 }
 .SobreYS img{
     padding: 0 20rem;
     width: 70rem;
     height: 25rem;
 }
-
 .TextoUno {
     padding-left: 22rem;
 }
-
 .TextoDos {
     padding-left: 15rem;
 }
-
 .linea {
     width: 15rem;         /* tamaño de la línea */
     height: 0.1rem;
     background-color: black;
 }
-
 .TextoTres {
     padding-left: 30rem;
 }
-
 .SobreYS p{
     padding: 3rem 3rem;
     font-size: 1.3rem;
-
-}
-
-}
-
-
-@media (max-width: 768px){
-    #map{
-    border-top: 0.1rem;
-    border-bottom: 0.1rem;
-}
-    .ContenidoTexto{
-    margin: 2rem 0;
-    font-size: 3rem;
-}
-.ContenidoTexto span{
-    font-size: 1.5rem;
-}
-.SectDos, .SectUno{
-    font-size: 1rem;
-}
-.SectUno{
-    border-bottom: 0.1rem solid black;
-}
-
-.SectDos span, .SectUno span{
-    font-size: 1rem;
-}
-
-/* SOBRE YS */
-
-.SectInicial {
-    padding-top: 0rem;
-    height: 20rem;               /* ocupa toda la pantalla */
-}
-
-    .SectInicial__YS {
-    line-height: 5rem;
-    font-size: 2.5rem;
-    
-}
-.SobreYS img{
-    width: 65rem;
-    height: 20rem;
-}
-
-.TextoUno {
-    padding-left: 8rem;
-}
-
-.TextoDos {
-    padding-left: 5rem;
-}
-
-.linea {
-    width: 10rem;         /* tamaño de la línea */
-    height: 0.1rem;
-    background-color: black;
-}
-
-.TextoTres {
-    padding-left: 17rem;
-}
-
-.SobreYS p{
-    padding: 3rem 5rem;
-    font-size: 1.3rem;
-
 }
 .SobreYS{
     flex-direction: column;
@@ -891,3 +705,172 @@ html{
     border-bottom: 0.1rem;
 }
 }
+@media (max-width:768px ){
+    /* INDEX */
+    .Header__nav__logoText__logoimg{
+         width: 2.5rem;  /* sin eso la imagen se sale de donde deberia */
+         height: 2.5rem;
+    }
+    .Header__nav__logoText { /* PARA EL YOUNG SOUL */
+        font-size: 1.5rem;
+     }
+    .SectionUno__lema{ /* SER MEJOR PERSONA */
+         font-size: 3rem;
+   
+    }
+    .SectionUno__lema span{ /* ANTES Q BUEN BAILARIN */
+         font-size: 5rem;
+    }
+    .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
+         height: 70rem;
+    }
+    .ContenedorSectDosTres{
+         flex-direction: column;
+         height: auto;                                                          
+    }
+    .ContenedorSectDosTres__SectionTres{
+         border-top: solid;
+         border-color: white;
+         border-left: 0;
+    }
+    .ContenedorSectDosTres__SectionDos,.ContenedorSectDosTres__SectionTres {
+        width: 100%;
+    }
+    .ContenedorSectDosTres__Text {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
+    .ContenedorSectDosTres__Boton {
+        margin-top: 7rem;
+        font-size: 2rem;
+    }
+    .SectionCuatro a{
+         font-size: 2rem;
+    }
+    .ContenedorSectDosTres__Boton{
+         font-size: 1.5rem;
+         margin-bottom: 10rem;
+         padding: 0rem 2rem;     /* espacio interno, 0 abajo arriba, 4 izq derec, necesario para que el hover se transforme bien */
+    }
+    .ContenedorSectDosTres__FlechaDos{
+         font-size: 3rem; /* agrandar flecha */
+    }
+    .PiePag{
+         height: 35rem;
+    }
+    .PiePag__RedesSociales__Link{
+         width: 4rem;
+         height: 4rem;
+    }
+    /* FOOTER */
+    .PiePag__Titulo {
+         font-size: 5rem;
+    }
+    .PiePag__Nombre {
+         font-size: 3rem;
+    }
+    .PiePag__Direccion {
+        font-size: 2.4rem;
+    }
+    .SectionUno__YS { /* PARA EL YOUNG SOUL */
+    font-size: 2rem;
+}
+ 
+/* INSTRUCTOR */
+    .Dancer{
+         height: 15rem;
+         padding-top: 0rem; /* para dar espacio entre el borde y el contenido */
+         font-size: 5rem;
+         line-height: 4rem;
+    }
+    .Dancer span{
+         font-size: 1.5rem;
+    }
+    .DancerDos__RedesS__Link{
+         margin-top: 0;
+         width: 3rem;
+         height: 3rem;
+     }
+      .DancerDos__img{
+    width: 25rem;
+    height: 25rem;
+    }
+     .DancerDos{
+          height: 45rem;
+    }
+    .Actividad{
+         padding-top: 3rem;
+         font-size: 1.5rem;
+    }
+/* CONTACTANOS */
+    #map{
+    border-top: 0.1rem;
+    border-bottom: 0.1rem;
+}
+    .ContenidoTexto{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.ContenidoTexto span{
+    font-size: 1.5rem;
+}
+.SectDos, .SectUno{
+    font-size: 1rem;
+}
+.SectUno{
+    border-bottom: 0.1rem solid black;
+}
+ 
+.SectDos span, .SectUno span{
+    font-size: 1rem;
+}
+ 
+/* SOBRE YS */
+ 
+.SectInicial {
+    padding-top: 0rem;
+    height: 20rem;            
+}
+ 
+    .SectInicial__YS {
+    line-height: 5rem;
+    font-size: 2.5rem;
+   
+}
+.SobreYS img{
+    width: 65rem;
+    height: 20rem;
+}
+ 
+.TextoUno {
+    padding-left: 8rem;
+}
+ 
+.TextoDos {
+    padding-left: 5rem;
+}
+ 
+.linea {
+    width: 10rem;         /* tamaño de la línea */
+    height: 0.1rem;
+    background-color: black;
+}
+ 
+.TextoTres {
+    padding-left: 17rem;
+}
+ 
+.SobreYS p{
+    padding: 3rem 5rem;
+    font-size: 1.3rem;
+ 
+}
+.SobreYS{
+    flex-direction: column;
+    padding-bottom: 5rem;
+    border-bottom: 0.1rem;
+}
+}
+
+
+
