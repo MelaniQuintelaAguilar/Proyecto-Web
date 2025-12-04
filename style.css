@@ -266,12 +266,18 @@ html{
     align-items: center; /* alinea veticall */
     justify-content: center; /* alinea horizontal */
 }
+.SectionCuatro a:hover{
+    color: white;
+}
 .SectionCuatro a{
     font-weight: bold;
     font-size: 3rem;
     font-family: 'Oswald', sans-serif;
     color: black;
     text-decoration: none;
+    transition: 
+    color 0.3s
+    ;
 }
 
 .PiePag{
@@ -311,6 +317,14 @@ html{
 .PiePag__RedesSociales__Link{
     width: 7rem;
     height: 7rem;
+    transition: 
+    height 0.5s,
+    width 0.5s
+    ;
+}
+.PiePag__RedesSociales__Link:hover{
+    width: 8rem;
+    height: 8rem;
 }
 .footer{
     /* borde arriba y abajo */
@@ -377,6 +391,14 @@ html{
 .DancerDos__RedesS__Link{
     width: 5rem;
     height: 5rem;
+    transition: 
+    height 0.5s,
+    width 0.5s
+    ;
+}
+.DancerDos__RedesS__Link:hover{
+    width: 6rem;
+    height: 6rem;
 }
 
 
@@ -526,6 +548,10 @@ html{
     height: 60rem;
 
 }
+.SobreYS img:hover{
+    content: url("img/SobreYSDos.jpg");
+
+}
 .Contacto a{
     font-size: 3.5rem;
 }
@@ -547,6 +573,14 @@ html{
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
+
+
+
+
+
+
+
+
 
 
 @media (max-width:1024px ){
@@ -609,6 +643,10 @@ html{
          width: 4rem;
          height: 4rem;
     }
+    .PiePag__RedesSociales__Link:hover{
+    width: 5rem;
+    height: 5rem;
+}
     /* FOOTER */
     .PiePag__Titulo {
          font-size: 5rem;
@@ -637,7 +675,15 @@ html{
          margin-top: 0;
          width: 3rem;
          height: 3rem;
-     }
+         transition: 
+    height 0.5s,
+    width 0.5s
+    ;
+}
+.DancerDos__RedesS__Link:hover{
+    width: 4rem;
+    height: 4rem;
+}
       .DancerDos__img{
     width: 25rem;
     height: 25rem;
@@ -771,10 +817,6 @@ html{
     }
     .PiePag{
          height: 30rem;
-    }
-    .PiePag__RedesSociales__Link{
-         width: 4rem;
-         height: 4rem;
     }
     /* FOOTER */
     .PiePag__Titulo {
