@@ -973,7 +973,7 @@ html{
     .Header__nav__menu__boton {
         font-size: 3rem;
     }
-    /* INDEX */
+    /* ---------------------------------------------------------INDEX */
     .Header__nav__logoText__logoimg{
          width: 2.5rem;  /* sin eso la imagen se sale de donde deberia */
          height: 2.5rem;
@@ -1050,7 +1050,7 @@ html{
     font-size: 2rem;
 }
  
-/* INSTRUCTOR */
+/*---------------------------------------------------------- INSTRUCTOR */
     .Dancer{
          height: 15rem;
          padding-top: 0rem; /* para dar espacio entre el borde y el contenido */
@@ -1085,7 +1085,7 @@ html{
          font-size: 1.5rem;
     }
  
-     /* CONTACTANOS */
+     /* --------------------------------------CONTACTANOS */
     #map{
     border-top: 0.1rem;
     border-bottom: 0.1rem;
@@ -1108,7 +1108,7 @@ html{
     font-size: 1rem;
 }
  
-/* SOBRE YS */
+/* ---------------------------------------------------SOBRE YS */
     .SectInicial__YS {
     line-height: 8rem;
     font-size: 7rem;
@@ -1145,8 +1145,65 @@ html{
     padding-bottom: 5rem;
     border-bottom: 0.1rem;
 }
+/* --------------------------------------------------ELENCO */
+.SectPasoPaso{
+    height: 15rem;
+    padding-left: 20rem;
+}
+.SectEquipo{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.SectEquipo__img{
+    width:90% ;
+    height: 40rem;
+    background-color: gray;
+}
+.SectEquipo p{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.Metas{
+    gap: 10rem;
+}
+.Logros{
+    background-color:rgb(18, 18, 18);
+}
+.Logros__KWorld, .Logros__KQ, .Logros__FiebreA{
+    flex-direction: column;
+    gap: 3rem; /* para el espacio entre una seccion y otra */
+    padding: 5rem 5rem;
+}
+.Logros__KWorld h1,.Logros__KQ h1, .Logros__FiebreA h1{
+    font-size: 4rem;
+}
+.Logros__KWorld__video,.Logros__KQ__video, .Logros__FiebreA__video{
+    width: 100%;           
+    height: auto;     
+} 
+
+.Logros__KWorld__img1, .Logros__KQ__img1, .Logros__FiebreA__img1{
+    background-color: grey;
+    width: 30rem;
+    height: 35rem;
+}
+
+.Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
+    margin-bottom: 5rem;
+}
+.Logros__KWorld__img3, .Logros__KQ__img3, .Logros__FiebreA__img3, .Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
+    background-color: grey;
+    width: 40rem;
+    height: 25rem;
+}
+
 }
 @media (max-width:768px ){
+    .Header__nav__hamburguesa {
+    margin-left: 30rem;/* distancia desde la derecha → ES LO QUE LO PEGA A LA ESQUINA */   
+    left: 0%;
+    }
     /* INDEX */
     .Header__nav__logoText__logoimg{
          width: 2.5rem;  /* sin eso la imagen se sale de donde deberia */
@@ -1219,6 +1276,7 @@ html{
     }
     .SectionUno__YS { /* PARA EL YOUNG SOUL */
     font-size: 2rem;
+    
 }
  
 /* INSTRUCTOR */
@@ -1276,7 +1334,7 @@ html{
     font-size: 1rem;
 }
  
-/* SOBRE YS */
+/* -------------------------------------SOBRE YS */
  
 .SectInicial {
     padding-top: 0rem;
@@ -1320,6 +1378,51 @@ html{
     flex-direction: column;
     padding-bottom: 5rem;
     border-bottom: 0.1rem;
+}
+
+/* ----------------------------------------ELENCO */
+.SectPasoPaso{
+    padding-left: 5rem;
+    height: auto;
+}
+.SectEquipo__img{
+    width: 30rem;
+    height: 20rem;
+    background-color: gray;
+}
+.Logros__KWorld, .Logros__KQ, .Logros__FiebreA{
+    gap: 2rem; /* para el espacio entre una seccion y otra */
+    padding: 4rem 2rem;
+}
+.Logros__KWorld h1,.Logros__KQ h1, .Logros__FiebreA h1{
+    font-size: 2rem;
+} 
+.Logros__KWorld__img1, .Logros__KQ__img1, .Logros__FiebreA__img1{
+    background-color: grey;
+    width: 12rem;
+    height: 15rem;
+}
+
+.Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
+    margin-bottom: 5rem;
+}
+.Logros__KWorld__img3, .Logros__KQ__img3, .Logros__FiebreA__img3, .Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
+    background-color: grey;
+    width: 20rem;
+    height: 10rem;
+}
+.Logros__KWorld__imagenes, .Logros__KWorld__img2y3, 
+.Logros__KQ__imagenes, .Logros__KQ__img2y3.Actividad,
+.Logros__FiebreA__imagenes, .Logros__FiebreA__img2y3{
+    gap: 1rem;
+}
+.Header__nav__menu {
+        text-align: left;
+        padding-left: 5rem;
+    }
+.Metas, .Metas h2{
+    gap: 1rem;
+    font-size: 1.8rem;
 }
 }
 
