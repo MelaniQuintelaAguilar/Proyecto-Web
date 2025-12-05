@@ -712,6 +712,90 @@ html{
         cursor: pointer;
         margin-top: 2rem;
     }
+    /* ------------------------------------------------------CLASES */
+    .Tipos{
+        height: 90rem;
+        text-align: center;
+        font-family: 'Encode Sans Semi Condensed', sans-serif;
+        color: white;
+        background-color: rgb(18, 18, 18);
+    }
+    .Tipos h1{
+        font-size: 7rem;
+        border-bottom: 0.1rem solid white;
+        padding-bottom: 2rem;
+    }
+    .Tipos h2{
+        font-size: 2.5rem;
+        padding: 2rem 0;
+    }
+    .Tipos__alineacions__titulo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+    .Tipos__alineacions__titulo h3{
+        font-size: 1.5rem;
+    }
+    .Tipos__alineacion{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        padding: 2rem 60rem;
+    }
+    .Tipos__alineacion__barra{
+        border-left: 0.1rem solid rgba(255, 255, 255, 0.3);
+        height: 15rem;
+        text-align: left;
+        padding-left: 3rem;
+        font-size: 1.3rem;    
+    }
+    .barra{
+        height: 20rem;
+    }
+    .barra3{
+        height: 10rem;
+    }
+    .barra2{
+        height: 15rem;
+    }
+    .Tipos__alineacion__barravideo{
+        margin-left: -3rem;
+        background-color: grey;
+    }
+    .vid1{
+        width: 50rem;
+        height: 25rem;
+    }
+    .vid2{
+        height: 30rem;
+        width: 40rem;
+    }
+    .vid3{
+        width: 40rem;
+        height: 35rem;
+    }
+    .Tipos__alineacion__punto {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+    }
+
+    .verde { 
+    background-color: #00ff00;
+     }
+     .celeste { 
+    background-color: #00aaff; 
+     }
+    .rojo {
+     background-color: #ff0000; 
+    }
+    .Tipos__alineacion__princiantes{
+        font-family: 'Poppins', sans-serif;
+    }
 
 @media (max-width:1024px ){
     /* INDEX */
