@@ -41,7 +41,6 @@ html{
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     z-index: 2;           /* Asegura que está sobre el video, es nivel de apilamiento */
 }
-
 .Header__nav__logoText { /* PARA EL YOUNG SOUL */
     position: fixed; /* para que young soul se fije al hacer scroll */
     color: white;
@@ -55,7 +54,6 @@ html{
     height: 5rem;
     vertical-align: middle; /* para que el medio de la imagen se alinie con el medio dlel texto */
 }
-
 .Header__nav__menu { /* PARA TODOS LOS LINKS */
     display: flex; /* poner elementos en fila */
     list-style: none; /* quitar puntos de la lista */
@@ -71,7 +69,6 @@ html{
         color 0.3s,
         font-size 0.3s;
 }
-
 .Header__nav__menu__boton:hover{
     border-radius: 5rem;
     padding: 0.7rem 1.5rem;
@@ -86,32 +83,21 @@ html{
     font-size: 3.2rem;
     background-color:black;
 }
-
 .Header__nav__menu li {
     padding-left: 6rem; /* para separar las los links*/
 }
-
-
 .HeaderNegro{
     background-color: rgb(18, 18, 18);
 }
-
-
 .HeaderBlanco{
     background-color: white;
 }
-
 .HeaderBlanco a, .HeaderRojo a{
     color: black;
 }
-
-
 .HeaderRojo{
     background-color:rgb(255, 71, 59);
 }
-
-
-
 .SectionUno{ /* PARA TODO EL CONTENEDOR UNO */
     border-bottom: solid; /* linea para la parte de abajo */
     border-color: rgb(255, 255, 255);
@@ -122,8 +108,6 @@ html{
     text-align: center;
     color: white;
 }
-
-
 .SectionUno__YS{ /* PARA YOUNG SOUL DANCE STUDIO */
     font-size: 2.7rem;
     font-family: Arial, sans-serif;
@@ -141,10 +125,7 @@ html{
     font-size: 12rem;
     font-weight: 900;
 }
-
 /* RED HAT DISPLAY LETRAS */
-
-
 .SectionUno__LeerMas {
     display: inline-flex; /* para que el texto y la flecha estén alineados, hace que el enlace sea un contenedor flexible en línea */
     margin-top: 5rem; /* espacio arriba del elace */
@@ -156,26 +137,18 @@ html{
     border-bottom: 1px solid white; /* línea debajo del texto */
     padding-bottom: 1rem; /* espacio entre el texto y la linea */
 }
-
 .SectionUno__Flecha {
     font-size: 4rem; /* agrandar flecha */
     display: inline-block; /* para q se mueva la flecha sin afectar el texto*/
     margin-left: 13rem; /* espacio entre texto y flecha */
     transition: transform 0.5s; /* para que la flecha se mueva suave*/
 }
-
 .SectionUno__LeerMas:hover .SectionUno__Flecha {
     transform: translateX(1rem); 
     /* flecha se mueve al pasar el mouse 
     transform propiedad que mueve rota escala o inclina un elemento
     X porque el movimiento es horizontal */
 }
-
-/* 
-
-
-
-*/
 .ContenedorSectDosTres{
     display: flex; /* elemntos flexibles */
     justify-content: center; /* hace que las dos secciones esten lado a lado */
@@ -194,7 +167,6 @@ html{
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center 10%; /* Mantén el punto central de la imagen siempre visible */
 }
-
 .ContenedorSectDosTres__Boton{
     margin-top: 30rem; /* para que el boton se acomode abajo */
     display: inline-flex; /* para que el texto y la flecha estén alineados, hace que el enlace sea un contenedor flexible en línea */
@@ -210,7 +182,6 @@ html{
         background 0.3s,
         color 0.3s,
         transform 0.3s; /* cualquier trasnformacion */
-
 }
 .ContenedorSectDosTres__FlechaDos{
     font-size: 6rem; /* agrandar flecha */
@@ -229,7 +200,6 @@ html{
     transform propiedad que mueve rota escala o inclina un elemento
     X porque el movimiento es horizontal */
 }
-
 .ContenedorSectDosTres__SectionTres{
     width: 50%;
     border: 0.2rem;
@@ -246,7 +216,6 @@ html{
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
-
 .ContenedorSectDosTres__Text{
     margin-top: 40rem; /* para bajar el texto al centro */
     color: white;
@@ -255,9 +224,6 @@ html{
     font-weight: 900;
     letter-spacing: 0.3rem;
 }
-
-
-
 .SectionCuatro{
     width: 100%;
     height: 10rem;
@@ -279,7 +245,6 @@ html{
     color 0.3s
     ;
 }
-
 .PiePag{
     width: 100%;
     height: 60rem; 
@@ -290,8 +255,6 @@ html{
     justify-content: center; /* alinea vertical */
 
 }
-
-
 .PiePag__Titulo{
     font-family: 'Poppins', sans-serif;
     font-size: 10rem;
@@ -342,10 +305,7 @@ html{
     font-weight: 400;
 }
 
-
-
-
-/* INSTRUCTOR */
+/* -------------------------------------------------INSTRUCTOR */
 .Dancer{
     width: 100%;
     height: 50rem;
@@ -364,10 +324,6 @@ html{
     font-weight: 500;
     color: white;
 }
-
-
-
-
 .DancerDos{
     width: 100%;
     height: 90rem;
@@ -387,7 +343,6 @@ html{
     justify-content: center; /* horizontal */
     gap: 4rem;
 }
-
 .DancerDos__RedesS__Link{
     width: 5rem;
     height: 5rem;
@@ -400,7 +355,6 @@ html{
     width: 6rem;
     height: 6rem;
 }
-
 
 /*  */
  .DancerDos__img{
@@ -443,12 +397,7 @@ html{
     aspect-ratio: 16/9; /* Por cada 16 unidades de ancho, el alto debe tener 9 unidades  16/9 es la proporcion delos videos de YT actuales */
 }
 
-
-
-
-
-
-/* CONTACTANOS */
+/*------------------------------------------------- CONTACTANOS */
 #map{
     width: 100%;
     height: 105rem;
@@ -488,7 +437,7 @@ html{
 }
 
 
-/* SOBRE YS */
+/* --------------------------------SOBRE YS */
 .SectInicial {
     padding-top: 5rem;
     background-color: rgb(255, 71, 59); 
@@ -496,15 +445,12 @@ html{
     width: 100%;
     height: 70rem;               /* ocupa toda la pantalla */
 }
-
 .SectInicial__YS {
     font-size: 12rem;
     font-weight: 900;
     line-height: 15rem;
     color: black;
 }
-
-
 .TextoUno {
     padding-left: 20rem;
 }
@@ -515,18 +461,15 @@ html{
     padding-left: 11rem;
     gap: 20px;             /* separa AL - SIGUIENTE */
 }
-
 .linea {
     display: inline-block;
     width: 35rem;         /* tamaño de la línea */
     height: 0.2rem;
     background-color: black;
 }
-
 .TextoTres {
     padding-left: 43rem;
 }
-
 .SobreYS p{
     padding: 0 8rem;
     color: black;
@@ -546,7 +489,6 @@ html{
     padding: 0 20rem;
     width: 115rem;
     height: 60rem;
-
 }
 .SobreYS img:hover{
     content: url("img/SobreYSDos.jpg");
@@ -555,6 +497,7 @@ html{
 .Contacto a{
     font-size: 3.5rem;
 }
+/*  */
 .SobreYS__imagenYT{
     background-image: linear-gradient(     /* se usa para degradado */
         rgba(0, 0, 0, 0.5),   /* capa negra transparente  0,0,0 color   0,5 trasnparencia 1 es el maximo*/
@@ -573,13 +516,114 @@ html{
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
+/*  */
 
+/* --------------------------------------------------ELENCO */
+.SectPasoPaso{
+    height: 40rem;
+}
 
-
-
-
-
-
+.SectEquipo{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 3rem 5rem;
+    background-color:rgb(255, 71, 59) ;
+}
+.SectEquipo__img{
+    margin-left: 5rem;
+    background-color: gray;
+    width: 105rem;
+    height: 55rem;
+}
+.SectEquipo p{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.Metas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70rem;
+    border-top: 0.1rem solid black;
+    background-color: rgb(255, 71, 59);
+    padding: 1rem 0;
+}
+.Metas__texto{
+    font-size: 2.5rem;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+.Estrella{
+    font-size: 6rem;
+    transition: text-shadow 1s,
+    color 0.3s;
+}
+.Metas:hover .Estrella{
+    /* 0rem  no se mueve a la derecha
+    0rem  no se mueve hacia abajo
+    10px  difuminado */
+    color: #fff200;
+    text-shadow: 0rem 0rem 10px #fff200,
+                    0rem 0rem 20px #fff200,
+                    0rem 0rem 40px #fff200,
+                    0rem 0rem 60px #fff200,
+                    0rem 0rem 80px #fff200;
+}
+.Logros{
+    background-color:rgb(18, 18, 18);
+}
+.Logros__KWorld, .Logros__KQ, .Logros__FiebreA{
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;  /* se convierte en horizontal por felx direct  */
+    flex-direction: row;
+    gap: 20rem;
+    padding: 5rem 5rem;
+}
+.Logros__KWorld h1,.Logros__KQ h1, .Logros__FiebreA h1{
+    font-size: 5rem;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    padding-bottom: 3rem;
+}
+.Logros__KWorld iframe,.Logros__KQ iframe, .Logros__FiebreA iframe{
+    border-bottom: 0.1rem solid white;
+    padding-bottom: 5rem;
+    width: 100rem;           /* tamaño del video */
+    height: auto;        /* altura normal sin cortar */
+    border-radius: 20px;  /* opcional: bordes redondeados */
+    aspect-ratio: 16/9; /* Por cada 16 unidades de ancho, el alto debe tener 9 unidades  16/9 es la proporcion delos videos de YT actuales */
+}
+.Logros__KQ{
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+}
+.Logros__KQ{
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+}
+.Logros__KWorld__imagenes, .Logros__KQ__imagenes, .Logros__FiebreA__imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.Logros__KWorld__img1, .Logros__KQ__img1, .Logros__FiebreA__img1{
+    background-color: grey;
+    width: 50rem;
+    height: 35rem;
+}
+.Logros__KWorld__img2y3, .Logros__KQ__img2y3 ,.Logros__FiebreA__img2y3{
+    flex-direction: row;
+}
+.Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
+    margin-bottom: 5rem;
+}
+.Logros__KWorld__img3, .Logros__KQ__img3, .Logros__FiebreA__img3, .Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
+    background-color: grey;
+    width: 60rem;
+    height: 35rem;
+}
 
 
 
