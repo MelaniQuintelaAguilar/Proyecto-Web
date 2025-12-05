@@ -586,14 +586,18 @@ html{
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     padding-bottom: 3rem;
 }
-.Logros__KWorld iframe,.Logros__KQ iframe, .Logros__FiebreA iframe{
+.Logros__KWorld__video iframe,.Logros__KQ__video iframe, .Logros__FiebreA__video iframe{
     border-bottom: 0.1rem solid white;
     padding-bottom: 5rem;
-    width: 100rem;           /* tamaño del video */
+    width: auto;           /* tamaño del video */
     height: auto;        /* altura normal sin cortar */
     border-radius: 20px;  /* opcional: bordes redondeados */
     aspect-ratio: 16/9; /* Por cada 16 unidades de ancho, el alto debe tener 9 unidades  16/9 es la proporcion delos videos de YT actuales */
 }
+.Logros__KWorld__video,.Logros__KQ__video, .Logros__FiebreA__video{
+    width: 50%;           
+    height: auto;     
+}   
 .Logros__KQ{
     border-top: 0.1rem solid white;
     border-bottom: 0.1rem solid white;
@@ -624,6 +628,8 @@ html{
     width: 60rem;
     height: 35rem;
 }
+
+/* -----------------------------------------------INSCRIBIRSE */
 
 
 
