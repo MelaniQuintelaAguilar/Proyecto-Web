@@ -11,3 +11,36 @@ function initMap() {
     });
 }
 window.onload = initMap;
+
+
+/* ELENCO */
+const formulario = document.querySelector('.formulario');
+
+formulario.addEventListener('submit', function(e) {
+    e.preventDefault(); // evita el envío por defecto
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const edad = document.getElementById("edad").value.trim();
+    const clase = document.getElementById("clase").value.trim();
+
+    if (nombre === "") {
+        alert("Ingrese su nombre completo");
+        return;
+    }
+    if (!/^[0-9]+$/.test(telefono)) {
+        alert("El teléfono debe contener solo números");
+        return;
+    }
+    if (edad === "" || edad <= 0) {
+        alert("Ingrese una edad válida");
+        return;
+    }
+    if (clase === "") {
+        alert("Ingrese la clase");
+        return;
+    }
+
+    alert("Formulario enviado correctamente");
+    formulario.submit();
+});

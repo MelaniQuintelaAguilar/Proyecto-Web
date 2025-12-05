@@ -224,7 +224,7 @@ html{
     font-weight: 900;
     letter-spacing: 0.3rem;
 }
-.SectionCuatro{
+.SectionCuatro, .Contact__inscribirse, .Contacto__sobreYS{
     width: 100%;
     height: 10rem;
     background-color: rgb(255, 71, 59); 
@@ -232,10 +232,10 @@ html{
     align-items: center; /* alinea veticall */
     justify-content: center; /* alinea horizontal */
 }
-.SectionCuatro a:hover{
+.SectionCuatro a:hover, .Contact__inscribirse a:hover, .Contacto__sobreYS a:hover{
     color: white;
 }
-.SectionCuatro a{
+.SectionCuatro a, .Contact__inscribirse a, .Contacto__sobreYS a{
     font-weight: bold;
     font-size: 3rem;
     font-family: 'Oswald', sans-serif;
@@ -494,9 +494,6 @@ html{
     content: url("img/SobreYSDos.jpg");
 
 }
-.Contacto a{
-    font-size: 3.5rem;
-}
 /*  */
 .SobreYS__imagenYT{
     background-image: linear-gradient(     /* se usa para degradado */
@@ -631,7 +628,90 @@ html{
 
 /* -----------------------------------------------INSCRIBIRSE */
 
+    .ComprarClase {
+        background: rgb(18, 18, 18);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 100%;
+        height:70rem;
+        text-align: center;
+        padding: 5rem 0;
+    }
 
+    .ComprarClase h2 {
+        font-size: 7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ComprarClase p {
+        font-size: 3.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .ComprarClase__tabla {
+        display: flex;
+        flex-direction:row;
+        gap: 20rem;
+        width: 90%;
+    }
+
+    .ComprarClase__tabla__clases {
+        width: 45%;
+        border-bottom: 0.1rem solid white;
+        border-top: 0.1rem solid white;
+        border-right: 0.1rem solid white;
+    }
+
+    .ComprarClase__tabla__clases__fila {
+        display:flex;
+        justify-content: space-between;
+        padding: 1.5rem 15rem;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+        font-size: 1.5rem;
+    }
+
+    .formulario {
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap; /* para q los inputs se vayan a la siguinete linea */
+        gap: 3rem;
+    }
+
+    .formulario__campo {
+        width: calc(50% - 1.5rem); /* toma el 50% del ancho calcular dinamicamente, ajustar automaticamente sin romper diseño */
+        text-align: left;
+    }
+
+    .formulario__campo label {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    /* Inputs tipo línea */
+    .formulario__campo input {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 0.1rem solid white;
+        padding: 0.3rem 0;
+        color: white;
+        outline: none; /* quita el borde azul por defecto al seleccionar */
+        font-size: 1.4rem;
+    }
+
+    .formulario button {
+        width: 15%;
+        padding: 1.5rem;
+        background: white;
+        color: black;
+        font-weight: bold;
+        font-size: 2rem;
+        border:
+            none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
 
 @media (max-width:1024px ){
     /* INDEX */
