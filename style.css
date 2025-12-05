@@ -408,6 +408,9 @@ html{
     border-top: 0.3rem solid black;
     border-bottom: 0.3rem solid black;
 }
+.Header__nav__menu a{
+    color: white;
+}
 .ContenidoTexto{
     margin: 9rem 0;
     text-align: center;
@@ -927,8 +930,48 @@ html{
     font-size: 2rem;
 }
 
-
+.Header__nav__hamburguesa {
+    position: fixed;      /* fijo*/
+    top: 1.5rem;            /* distancia desde arriba */
+    right: 1rem;          /* distancia desde la derecha → ES LO QUE LO PEGA A LA ESQUINA */
+    width: 7rem;
+    height: 7rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;        /* MUY ENCIMA DE TODO */
+    display: none;        /* oculto en pantallas grandes */
+}
 @media (max-width:1024px ){
+    /* MENU HAMBURGUESA */
+
+    .Header__nav__hamburguesa {
+        display: block;
+    }
+
+    .Header__nav__menu {
+        display: none;
+        position: fixed;
+        top: 10rem;
+        right: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        flex-direction: column;
+        padding: 4rem 0;
+        text-align: center;
+              /* oculto en pantallas grandes */
+    }
+
+    .Header__nav__menu.activo {
+        display: flex; /* APARECE */
+    }
+
+    .Header__nav__menu li {
+        padding-left: 0; /* quitar padding que arruina el centro */
+    }
+
+    .Header__nav__menu__boton {
+        font-size: 3rem;
+    }
     /* INDEX */
     .Header__nav__logoText__logoimg{
          width: 2.5rem;  /* sin eso la imagen se sale de donde deberia */

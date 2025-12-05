@@ -44,3 +44,4 @@ formulario.addEventListener('submit', function(e) {
     alert("Formulario enviado correctamente");
     formulario.submit();
 });
+
