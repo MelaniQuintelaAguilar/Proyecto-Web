@@ -60,6 +60,9 @@ html{
     gap: 4rem; /* espacio entre las opciones */
     margin-left: 125rem; /* del margen para afuera, Para dar margen a la izquierda y separar los links de young soul */
 }
+.Header__nav .HeadRojo,.Header__nav__menu .HeadRojo, .Header__nav .HeadBlanco,.Header__nav__menu .HeadBlanco{
+    color: black;
+}
 .Header__nav__menu a { /* links  */
     font-weight: 900;
     color: white;
@@ -69,14 +72,14 @@ html{
         color 0.3s,
         font-size 0.3s;
 }
-.Header__nav__menu__boton:hover{
+.Header__nav__menu .Header__nav__menu__boton:hover{
     border-radius: 5rem;
     padding: 0.7rem 1.5rem;
     color: black;
     font-size: 3.2rem;
     background-color:rgb(255, 71, 59);
 }
-.Header__nav__menu__rojo:hover{
+.Header__nav__menu .Header__nav__menu__rojo:hover{
     border-radius: 5rem;
     padding: 0.7rem 1.5rem;
     color: white;
@@ -91,9 +94,6 @@ html{
 }
 .HeaderBlanco{
     background-color: white;
-}
-.HeaderBlanco a, .HeaderRojo a{
-    color: black;
 }
 .HeaderRojo{
     background-color:rgb(255, 71, 59);
@@ -590,18 +590,18 @@ html{
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     padding-bottom: 3rem;
 }
+.Logros__KWorld__video,.Logros__KQ__video, .Logros__FiebreA__video{
+    width: 100%;           
+    height: auto;     
+} 
 .Logros__KWorld__video iframe,.Logros__KQ__video iframe, .Logros__FiebreA__video iframe{
     border-bottom: 0.1rem solid white;
     padding-bottom: 5rem;
-    width: auto;           /* tamaño del video */
+    width: 100%;           /* tamaño del video */
     height: auto;        /* altura normal sin cortar */
     border-radius: 20px;  /* opcional: bordes redondeados */
     aspect-ratio: 16/9; /* Por cada 16 unidades de ancho, el alto debe tener 9 unidades  16/9 es la proporcion delos videos de YT actuales */
-}
-.Logros__KWorld__video,.Logros__KQ__video, .Logros__FiebreA__video{
-    width: 50%;           
-    height: auto;     
-}   
+}  
 .Logros__KQ{
     border-top: 0.1rem solid white;
     border-bottom: 0.1rem solid white;
@@ -967,6 +967,7 @@ html{
 
     .Header__nav__menu li {
         padding-left: 0; /* quitar padding que arruina el centro */
+        color: black;
     }
 
     .Header__nav__menu__boton {
