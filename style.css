@@ -47,6 +47,8 @@ html{
     font-size: 3rem;
     font-weight: 900; /* extra grueso, sirve grosor o negrita */
     text-decoration: none;
+    text-shadow:      /* las letras se ven mejor */
+    0px 0px 15px black;
 }
 .Header__nav__logoText__logoimg{
     font-weight: bold;
@@ -63,6 +65,10 @@ html{
 .Header__nav .HeadRojo,.Header__nav__menu .HeadRojo, .Header__nav .HeadBlanco,.Header__nav__menu .HeadBlanco{
     color: black;
 }
+.sombra a{
+    text-shadow:      /* las letras se ven mejor */
+    0px 0px 15px black;
+}
 .Header__nav__menu a { /* links  */
     font-weight: 900;
     color: white;
@@ -78,6 +84,8 @@ html{
     color: black;
     font-size: 3.2rem;
     background-color:rgb(255, 71, 59);
+    text-shadow: none;
+
 }
 .Header__nav__menu .Header__nav__menu__rojo:hover{
     border-radius: 5rem;
@@ -236,10 +244,10 @@ html{
     align-items: center; /* alinea veticall */
     justify-content: center; /* alinea horizontal */
 }
-.SectionCuatro a:hover, .Contact__inscribirse a:hover, .Contacto__sobreYS a:hover{
+.SectionCuatro p:hover, .Contact__inscribirse p:hover, .Contacto__sobreYS p:hover{
     color: white;
 }
-.SectionCuatro a, .Contact__inscribirse a, .Contacto__sobreYS a{
+.SectionCuatro p, .Contact__inscribirse p, .Contacto__sobreYS p{
     font-weight: bold;
     font-size: 3rem;
     font-family: 'Oswald', sans-serif;
@@ -399,6 +407,17 @@ html{
     height: auto;        /* altura normal sin cortar */
     border-radius: 20px;  /* opcional: bordes redondeados */
     aspect-ratio: 16/9; /* Por cada 16 unidades de ancho, el alto debe tener 9 unidades  16/9 es la proporcion delos videos de YT actuales */
+    transition: box-shadow 0.5s,
+    width 1s,
+    height 1s;
+}
+.Actividad__Videos iframe:hover {
+    box-shadow: 0rem 0rem 10px white,
+                    0rem 0rem 20px white,
+                    0rem 0rem 40px white,
+                    0rem 0rem 60px white;
+    width: 80%;           /* tamaño del video */
+    height: auto;        /* altura normal sin cortar */
 }
 
 /*------------------------------------------------- CONTACTANOS */
@@ -408,8 +427,8 @@ html{
     border-top: 0.3rem solid black;
     border-bottom: 0.3rem solid black;
 }
-.Header__nav__menu a{
-    color: white;
+.Shadow{
+    text-shadow: none;
 }
 .ContenidoTexto{
     margin: 9rem 0;
@@ -445,6 +464,10 @@ html{
 
 
 /* --------------------------------SOBRE YS */
+.Brillo{
+    text-shadow: 0px 0px 5px white,
+    0px 0px 5px white;
+}
 .SectInicial {
     padding-top: 5rem;
     background-color: rgb(255, 71, 59); 
@@ -522,7 +545,7 @@ html{
 }
 /*  */
 
-/* --------------------------------------------------ELENCO */
+/* -------------------------------------------------------------------------------ELENCO */
 .SectPasoPaso{
     height: 40rem;
 }
@@ -601,7 +624,18 @@ html{
     height: auto;        /* altura normal sin cortar */
     border-radius: 20px;  /* opcional: bordes redondeados */
     aspect-ratio: 16/9; /* Por cada 16 unidades de ancho, el alto debe tener 9 unidades  16/9 es la proporcion delos videos de YT actuales */
+    transition: box-shadow 0.5s,
+    width 1s,
+    height 1s;
 }  
+.Logros__KWorld__video iframe:hover,.Logros__KQ__video iframe:hover, .Logros__FiebreA__video iframe:hover{
+    box-shadow: 0rem 0rem 10px white,
+                    0rem 0rem 20px white,
+                    0rem 0rem 40px white,
+                    0rem 0rem 60px white;
+    width: 95%;           /* tamaño del video */
+    height: auto;
+} 
 .Logros__KQ{
     border-top: 0.1rem solid white;
     border-bottom: 0.1rem solid white;
@@ -633,7 +667,7 @@ html{
     height: 35rem;
 }
 
-/* -----------------------------------------------INSCRIBIRSE */
+/* ----------------------------------------------------------------------INSCRIBIRSE */
 
     .ComprarClase {
         background: rgb(18, 18, 18);
@@ -719,7 +753,7 @@ html{
         cursor: pointer;
         margin-top: 2rem;
     }
-    /* ------------------------------------------------------CLASES */
+    /* -------------------------------------------------------------------------------CLASES */
     .Tipos{
         height: 90rem;
         text-align: center;
@@ -880,6 +914,18 @@ html{
     aspect-ratio: 16/9;
     border-bottom: 0.1rem solid white;
     padding-bottom: 3rem;
+    transition: box-shadow 0.5s,
+    width 1s,
+    height 1s;
+}
+.Detalles__principiantes iframe:hover, .Detalles__intermedio iframe:hover, .Detalles__estilos iframe:hover {
+
+    box-shadow: 0rem 0rem 10px white,
+                    0rem 0rem 20px white,
+                    0rem 0rem 40px white,
+                    0rem 0rem 60px white;
+    width: 45%;           /* tamaño del video */
+    height: auto;
 }
 
 .Detalles__contenido {
@@ -940,6 +986,7 @@ html{
     cursor: pointer;
     z-index: 1000;        /* MUY ENCIMA DE TODO */
     display: none;        /* oculto en pantallas grandes */
+    
 }
 @media (max-width:1024px ){
     /* MENU HAMBURGUESA */
@@ -954,10 +1001,10 @@ html{
         top: 10rem;
         right: 0;
         width: 100%;
-        background: rgba(0,0,0,0.9);
         flex-direction: column;
         padding: 4rem 0;
         text-align: center;
+        background-color: rgba(0, 0, 0, 0.845);
               /* oculto en pantallas grandes */
     }
 
@@ -993,7 +1040,7 @@ html{
     }
     .SectionUno__LeerMas { 
     font-size: 2rem;
-}
+    }
     .ContenedorSectDosTres{
          flex-direction: column;
          height: auto;                                                          
@@ -1201,6 +1248,7 @@ html{
 }
 @media (max-width:768px ){
     .Header__nav__hamburguesa {
+        position: fixed;
     margin-left: 30rem;/* distancia desde la derecha → ES LO QUE LO PEGA A LA ESQUINA */   
     left: 0%;
     }
