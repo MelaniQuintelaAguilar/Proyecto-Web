@@ -824,8 +824,8 @@ html{
     }
     .Tipos__alineacion{
         display: flex;
+        gap: 8rem;
         flex-direction: row;
-        gap: 0;
         padding: 2rem 60rem;
     }
     .Tipos__alineacion__barra{
@@ -833,7 +833,7 @@ html{
         height: 15rem;
         text-align: left;
         padding-left: 3rem;
-        font-size: 1.3rem;    
+        font-size: 1.5rem;   
     }
     .barra{
         height: 20rem;
@@ -1002,9 +1002,9 @@ html{
 }
 
 .Detalles__contenido p {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 2rem 0;
-    line-height: 2rem;
+    line-height: 4rem;
 }
 
 .Detalles__boton {
