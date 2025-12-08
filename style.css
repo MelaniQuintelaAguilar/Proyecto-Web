@@ -784,6 +784,16 @@ html{
         border-radius: 0.5rem;
         cursor: pointer;
         margin-top: 2rem;
+        transition: box-shadow 0.5s,
+        width 0.5s;
+    }
+    .formulario button:hover{
+        width: 14%;
+         box-shadow: 0rem 0rem 10px white,
+                    0rem 0rem 20px white,
+                    0rem 0rem 40px white,
+                    0rem 0rem 60px white;
+
     }
     /* -------------------------------------------------------------------------------CLASES */
     .Tipos{
@@ -1284,7 +1294,91 @@ html{
     width: 40rem;
     height: 25rem;
 }
+/* --------------------------------------------------------CLASES */
 
+.Tipos {
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .Tipos h1 {
+        font-size: 5rem;
+    }
+
+    .Tipos h2 {
+        font-size: 2rem;
+    }
+
+    .Tipos__alineacion {
+        padding: 2rem 10rem;
+        gap: 4rem;
+    }
+
+    .Tipos__alineacion__barra {
+        height: auto;
+        padding-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .vid1, .vid2, .vid3 {
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 22rem;
+        margin-left: 0;
+    }
+
+    /* -----------------------------------------------------------------------INSCRIBIRSE */
+    .ComprarClase {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .ComprarClase h2 {
+        font-size: 5rem;
+    }
+
+    .ComprarClase p {
+        font-size: 3rem;
+    }
+
+    .ComprarClase__tabla {
+        gap: 5rem;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ComprarClase__tabla__clases {
+        width: 45%;
+    }
+
+    .ComprarClase__tabla__clases__fila {
+        padding: 1.5rem 6rem;
+        font-size: 1.7rem;
+    }
+
+    /* formulario */
+    .formulario {
+        width: 45%;
+        gap: 2rem;
+    }
+
+    .formulario__campo {
+        width: calc(50% - 1rem);
+    }
+
+    .formulario button {
+        width: 40%;
+        font-size: 2rem;
+    }
+    .formulario button:hover{
+        width: 38%;
+         box-shadow: 0rem 0rem 10px white,
+                    0rem 0rem 20px white,
+                    0rem 0rem 40px white,
+                    0rem 0rem 60px white;
+
+    }
 }
 @media (max-width:768px ){
     .Header__nav__hamburguesa {
@@ -1299,6 +1393,10 @@ html{
     }
     .Header__nav__logoText { /* PARA EL YOUNG SOUL */
         font-size: 1.5rem;
+        margin-left: 0rem;
+     }
+     .Header__nav { /* PARA EL YOUNG SOUL */
+        padding-left: 2.5rem;
      }
     .SectionUno__lema{ /* SER MEJOR PERSONA */
          font-size: 2rem;
@@ -1512,6 +1610,204 @@ html{
     gap: 1rem;
     font-size: 1.8rem;
 }
+/* -------------------------------------------------------CLASES */
+.Tipos {
+        height: auto;
+        padding: 0 2rem 6rem 2rem;
+        text-align: left;
+    }
+
+    .Tipos h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .Tipos h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .Tipos__alineacion {
+        flex-direction: column;
+        padding: 0;
+        gap: 4rem;
+    }
+
+    .Tipos__alineacions__titulo {
+        padding: 1rem 0;
+    }
+
+    .Tipos__alineacion__barra {
+        border-left: 0.1rem solid rgba(255,255,255,0.3);
+        padding-left: 1.5rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .Tipos__alineacion__barravideo {
+        width: 100%;
+        height: 20rem;
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .vid1, .vid2, .vid3 {
+        width: 100%;
+        height: 20rem;
+    }
+
+    /* ---------------------- HORARIO ---------------------- */
+
+    .Horario {
+        padding: 4rem 2rem;
+    }
+
+    .HorarioTitulo h1 {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .HorarioTabla__fila {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .HorarioTabla__fila__nivel {
+        margin-top: 1rem;
+    }
+
+
+    /* ---------------------- DETALLES ---------------------- */
+
+    .Detalles {
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .Detalles h2 {
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    .Detalles__principiantes,
+    .Detalles__intermedio,
+    .Detalles__estilos {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .Detalles__principiantes iframe,
+    .Detalles__intermedio iframe,
+    .Detalles__estilos iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .Detalles__principiantes iframe:hover,
+    .Detalles__intermedio iframe:hover,
+    .Detalles__estilos iframe:hover {
+        width: 95%;
+        height: auto;
+    }
+
+    .Detalles__contenido {
+        width: 100%;
+    }
+
+    .Detalles__titulo {
+        gap: 1rem;
+    }
+
+    .Detalles__titulo h3 {
+        font-size: 2rem;
+    }
+
+    .Detalles__contenido p {
+        font-size: 1.4rem;
+    }
+
+    .Detalles__boton {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .Detalles__boton a {
+        font-size: 1.6rem;
+    }
+    /* ------------------------------------------------------INSCRIBIRSE */
+    .ComprarClase {
+        height: auto;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .ComprarClase h2 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .ComprarClase p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    /* TABLA EN UNA COLUMNA */
+    .ComprarClase__tabla {
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .ComprarClase__tabla__clases {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+
+    .ComprarClase__tabla__clases__fila {
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+        justify-content: space-between;
+    }
+
+    /* FORMULARIO MÓVIL */
+    .formulario {
+        width: 100%;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+    }
+
+    .formulario__campo {
+        width: 100%;
+        text-align: left;
+    }
+
+    .formulario__campo label {
+        font-size: 1.6rem;
+    }
+
+    .formulario__campo input {
+        font-size: 1.6rem;
+        padding: 0.6rem 0;
+    }
+
+    .formulario button {
+        width: 60%;
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    .Contact__inscribirse p {
+        font-size: 2rem;   
+    }
 }
 
 
