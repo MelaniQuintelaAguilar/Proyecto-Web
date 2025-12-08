@@ -559,9 +559,11 @@ html{
 }
 .SectEquipo__img{
     margin-left: 5rem;
-    background-color: gray;
     width: 105rem;
     height: 55rem;
+    background-image: url(img/ElencoPasoaPaso.jpg);
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center; /* Mantén el punto central de la imagen siempre visible */
 }
 .SectEquipo p{
     font-size: 2rem;
@@ -644,14 +646,43 @@ html{
     border-top: 0.1rem solid white;
     border-bottom: 0.1rem solid white;
 }
+
 .Logros__KWorld__imagenes, .Logros__KQ__imagenes, .Logros__FiebreA__imagenes{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
+.Logros__KWorld__img1{
+    background-image: url(img/ElencoKW1.jpg);
+}
+.Logros__KWorld__img2{
+    background-image: url(img/ElencoKW2.jpg);
+}
+.Logros__KWorld__img3{
+    background-image: url(img/ElencoKW3.jpg);
+}
+.Logros__KQ__img1{
+    background-image: url(img/ElencoKQ1.jpg);
+}
+.Logros__KQ__img2{
+    background-image: url(img/ElencoKQ2.jpg);
+}
+.Logros__KQ__img3{
+    background-image: url(img/ElencoKQ3.jpg);
+}
+.Logros__FiebreA__img1{
+    background-image: url(img/ElencoFA1.jpg);
+}
+.Logros__FiebreA__img2{
+    background-image: url(img/ElencoFA2.jpg);
+}
+.Logros__FiebreA__img3{
+    background-image: url(img/ElencoFA3.jpg);
+}
 .Logros__KWorld__img1, .Logros__KQ__img1, .Logros__FiebreA__img1{
-    background-color: grey;
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center; /* Mantén el punto central de la imagen siempre visible */
     width: 50rem;
     height: 35rem;
 }
@@ -662,7 +693,8 @@ html{
     margin-bottom: 5rem;
 }
 .Logros__KWorld__img3, .Logros__KQ__img3, .Logros__FiebreA__img3, .Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
-    background-color: grey;
+    background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+    background-position: center; /* Mantén el punto central de la imagen siempre visible */
     width: 60rem;
     height: 35rem;
 }
@@ -804,19 +836,27 @@ html{
     }
     .Tipos__alineacion__barravideo{
         margin-left: -3rem;
-        background-color: grey;
     }
     .vid1{
         width: 48rem;
         height: 25rem;
+        background-image: url(img/ClasesPrincipiante.jpg);
+        background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+        background-position: center; /* Mantén el punto central de la imagen siempre visible */
     }
     .vid2{
         height: 30rem;
         width: 39rem;
+        background-image: url(img/ClasesIntermedio.jpg);
+        background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+        background-position: center; /* Mantén el punto central de la imagen siempre visible */
     }
     .vid3{
         width: 40rem;
         height: 35rem;
+        background-image: url(img/ClasesEstilos.jpg);
+        background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
+        background-position: center; /* Mantén el punto central de la imagen siempre visible */
     }
     .Tipos__alineacion__punto, .Horario__punto {
         width: 1rem;
