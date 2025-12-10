@@ -6,6 +6,8 @@
 html{
     box-sizing: border-box; /* el padding y border se incluyan dentro del ancho */
     font-size: 62.5%; /* para que 1 rem sea 10px y no 16px */
+    overflow-x: hidden; /* No permitir scroll horizontal */
+    max-width: 100vw;   /* Máximo ancho igual a la ventana */
 }
 *,*:before,*::after{
     box-sizing: inherit; /* todos los elementos del sitio usan el mismo box-sizing */
@@ -40,6 +42,7 @@ html{
     color: white;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     z-index: 2;           /* Asegura que está sobre el video, es nivel de apilamiento */
+
 }
 .Header__nav__logoText { /* PARA EL YOUNG SOUL */
     position: fixed; /* para que young soul se fije al hacer scroll */
@@ -196,7 +199,7 @@ html{
 
 
 .ContenedorSectDosTres__FlechaDos, .Detalles__boton a{
-    font-size: 6rem; /* agrandar flecha */
+    font-size: 5rem; /* agrandar flecha */
     display: inline-block; /* para q se mueva la flecha sin afectar el texto*/
     margin-left: 3rem; /* espacio entre texto y flecha */
     transition: transform 0.5s; /* para que la flecha se mueva suave*/
@@ -360,8 +363,7 @@ html{
     height: 5rem;
     transition: 
     height 0.5s,
-    width 0.5s
-    ;
+    width 0.5s;
 }
 .DancerDos__RedesS__Link:hover{
     width: 6rem;
@@ -463,11 +465,12 @@ html{
 }
 
 
-/* --------------------------------SOBRE YS */
+/* ---------------------------------------------------------------------------------SOBRE YS */
 .Brillo{
-    text-shadow: 0px 0px 5px white,
-    0px 0px 5px white;
+    text-shadow: 0 0 0.5rem white,
+    0 0 0.5rem white;
 }
+
 .SectInicial {
     padding-top: 5rem;
     background-color: rgb(255, 71, 59); 
@@ -475,6 +478,7 @@ html{
     width: 100%;
     height: 70rem;               /* ocupa toda la pantalla */
 }
+
 .SectInicial__YS {
     font-size: 12rem;
     font-weight: 900;
@@ -564,6 +568,15 @@ html{
     background-image: url(img/ElencoPasoaPaso.jpg);
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
+    transition: all 0.5s;
+}
+.SectEquipo__img:hover{
+    transform: scale(1.1);
+    box-shadow: 0rem 0rem 10px black,
+                    0rem 0rem 20px black,
+                    0rem 0rem 40px black,
+                    0rem 0rem 60px #ff3300,
+                    0rem 0rem 80px #922206;
 }
 .SectEquipo p{
     font-size: 2rem;
@@ -631,10 +644,10 @@ html{
     height 1s;
 }  
 .Logros__KWorld__video iframe:hover,.Logros__KQ__video iframe:hover, .Logros__FiebreA__video iframe:hover{
-    box-shadow: 0rem 0rem 10px white,
-                    0rem 0rem 20px white,
-                    0rem 0rem 40px white,
-                    0rem 0rem 60px white;
+    box-shadow: 0rem 0rem 10px #e91f1f,
+                 0rem 0rem 20px #e91f1f,
+                 0rem 0rem 40px rgb(83, 21, 21),
+                 0rem 0rem 60px rgb(83, 21, 21);
     width: 95%;           /* tamaño del video */
     height: auto;
 } 
@@ -655,6 +668,19 @@ html{
 }
 .Logros__KWorld__img1{
     background-image: url(img/ElencoKW1.jpg);
+}
+.Logros__KWorld__img1:hover, 
+.Logros__KWorld__img2:hover,
+.Logros__KWorld__img3:hover,
+.Logros__KQ__img1:hover,
+.Logros__KQ__img2:hover,
+.Logros__KQ__img3:hover,
+.Logros__FiebreA__img1:hover,
+.Logros__FiebreA__img2:hover,
+.Logros__FiebreA__img3:hover   {
+    filter: brightness(150%);
+    border-radius: 3rem;
+
 }
 .Logros__KWorld__img2{
     background-image: url(img/ElencoKW2.jpg);
@@ -685,18 +711,21 @@ html{
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
     width: 50rem;
     height: 35rem;
+    transition: all 0.5s;
 }
 .Logros__KWorld__img2y3, .Logros__KQ__img2y3 ,.Logros__FiebreA__img2y3{
     flex-direction: row;
 }
 .Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
     margin-bottom: 5rem;
+    transition: all 0.5s;
 }
 .Logros__KWorld__img3, .Logros__KQ__img3, .Logros__FiebreA__img3, .Logros__KWorld__img2, .Logros__KQ__img2, .Logros__FiebreA__img2{
     background-size: cover; /* imagen de fondo cubra todo el contenedor, sin dejar espacios en blanco */
     background-position: center; /* Mantén el punto central de la imagen siempre visible */
     width: 60rem;
     height: 35rem;
+    transition: all 0.5s;
 }
 
 /* ----------------------------------------------------------------------INSCRIBIRSE */
@@ -771,6 +800,28 @@ html{
         outline: none; /* quita el borde azul por defecto al seleccionar */
         font-size: 1.4rem;
     }
+    #clase {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(255,255,255,0.05); /* fondo suave */
+    border: none;                /* elimina todos los bordes */
+    border-bottom: 0.1rem solid white; /* solo línea inferior */
+    border-radius: 0;
+}
+
+#clase option {
+    background-color: #121212 ; /* elimina fondo blanco */
+    color: white ;              /* asegura texto visible */
+    border: none;              /* evita bordes raros */
+    padding: 1rem;
+}
+
+#clase option:checked {
+    background-color: #333 ;
+    color: white ;
+}
 
     .formulario button {
         width: 15%;
@@ -779,8 +830,7 @@ html{
         color: black;
         font-weight: bold;
         font-size: 2rem;
-        border:
-            none;
+        border:none;
         border-radius: 0.5rem;
         cursor: pointer;
         margin-top: 2rem;
@@ -1038,7 +1088,8 @@ html{
     display: none;        /* oculto en pantallas grandes */
     
 }
-@media (max-width:1024px ){
+
+@media (max-width:1600px ){
     /* MENU HAMBURGUESA */
 
     .Header__nav__hamburguesa {
@@ -1326,6 +1377,7 @@ html{
         height: 22rem;
         margin-left: 0;
     }
+    
 
     /* -----------------------------------------------------------------------INSCRIBIRSE */
     .ComprarClase {
@@ -1436,7 +1488,10 @@ html{
         margin-top: 7rem;
         font-size: 2rem;
     }
-    .SectionCuatro a{
+    .SectionCuatro{
+         height: 6rem;
+    }
+    .SectionCuatro p{
          font-size: 2rem;
     }
     .ContenedorSectDosTres__Boton{
@@ -1524,10 +1579,10 @@ html{
  
 .SectInicial {
     padding-top: 0rem;
-    height: 20rem;            
+    height: 15rem;            
 }
  
-    .SectInicial__YS {
+.SectInicial__YS {
     line-height: 4.8rem;
     font-size: 3rem;
    
@@ -1538,11 +1593,11 @@ html{
 }
  
 .TextoUno {
-    padding-left: 6rem;
+    padding-left: 4rem;
 }
  
 .TextoDos {
-    padding-left: 1.5rem;
+    padding-left: 0.5rem;
 }
  
 .linea {
@@ -1565,16 +1620,29 @@ html{
     padding-bottom: 5rem;
     border-bottom: 0.1rem;
 }
-
+.Contacto__sobreYS{
+    height: 6rem;
+}
+.Contacto__sobreYS p{
+    font-size: 1.7rem;
+}
 /* ----------------------------------------ELENCO */
 .SectPasoPaso{
     padding-left: 5rem;
     height: auto;
 }
+
 .SectEquipo__img{
     width: 30rem;
     height: 20rem;
+    margin-left: 0;
     background-color: gray;
+}
+.SectPasoPaso .TextoTres {
+    padding-left: 9rem;
+}
+.SectEquipo{
+    padding-top: 1rem;
 }
 .Logros__KWorld, .Logros__KQ, .Logros__FiebreA{
     gap: 2rem; /* para el espacio entre una seccion y otra */
@@ -1768,15 +1836,27 @@ html{
 
     .ComprarClase__tabla__clases {
         width: 100%;
-        border-left: none;
-        border-right: none;
+        color: black;
+        background-color: rgb(231, 235, 239);
+        border-radius: 4rem;
+        transition: box-shadow 0.5s,
+        border-radius 0.5s;
+        
+    }
+    .ComprarClase__tabla__clases:hover {
+        box-shadow: 0rem 0rem 10px white,
+                    0rem 0rem 20px white;
+        border-radius: 0;
     }
 
     .ComprarClase__tabla__clases__fila {
         padding: 1.5rem 2rem;
-        font-size: 1.6rem;
-        justify-content: space-between;
+       font-size: 1.6rem;
+       justify-content: space-between;
+       border-bottom: 0.1rem solid black;
     }
+    
+
 
     /* FORMULARIO MÓVIL */
     .formulario {
